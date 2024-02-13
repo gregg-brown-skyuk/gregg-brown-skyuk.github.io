@@ -1,0 +1,49 @@
+:root {
+  --sky-clr: #111;
+  --star-clr: #36f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--sky-clr);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  top: -20px;
+  color: var(--star-clr);
+  animation: animate 5s linear forwards;
+}
+
+.star::before {
+  content: "\f005";
+  font-family: "fontAwesome";
+  font-weight: 400;
+  text-shadow: 0 0 5px var(--star-clr), 0 0 20px var(--star-clr),
+    0 0 50px var(--star-clr);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(var(--random-drop)) rotate(var(--spin-80))
+      rotate3d(1, 1, 1, var(--spin-80));
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(var(--spin-full)) rotate3d(1, 1, 1, 0);
+    opacity: 0;
+  }
+}
