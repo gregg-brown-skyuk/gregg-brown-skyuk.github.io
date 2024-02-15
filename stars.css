@@ -1,24 +1,7 @@
-:root {
-  --sky-clr: #111;
-  --star-clr: #46f;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--sky-clr);
-  min-height: 100vh;
-  overflow: hidden;
-}
-
 .star {
   position: absolute;
   top: -20px;
-  color: var(--star-clr);
+  color: #46f;
   animation: animate 5s linear forwards;
 }
 

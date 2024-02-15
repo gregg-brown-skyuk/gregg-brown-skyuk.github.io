@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+a i {
+    padding-inline-end: 5px;
+}
