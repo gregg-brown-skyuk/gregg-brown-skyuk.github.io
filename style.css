@@ -18,6 +18,7 @@ a {
     font-weight: bolder;
     transition: all 500ms;
     border-radius: 15px;
+    margin: 5px;
 }
 
 a:hover {
