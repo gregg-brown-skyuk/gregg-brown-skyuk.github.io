@@ -1,0 +1,29 @@
+#switch-container {
+    border: 2px solid white;
+    width: 100%;
+    height: 50px;
+}
+
+form {
+    position: relative;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    background: #aaf;
+    width: 80px;
+    transition: 500ms;
+}
+
+input:checked + label {
+    background: #fcc;
+}
